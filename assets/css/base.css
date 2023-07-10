@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--transition: all 0.3s ease-in-out;
+	--transition-default: all 0.3s ease-in-out;
+	--primary-color: #D22A2B;
+	--primary-hover: #b42122;
+	--primary-rgb: 210, 42, 43;
+	--secondary-color: #FFF0F5;
+	--secondary-rgb: 255, 240, 245;
+	--font-hand: 'Dancing Script', cursive;
+}
+
+body {
+	font: 400 14px/1.3 'Libre Franklin', sans-serif;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	color: var(--bs-gray-900);
+}
+
+a, a:hover, a:focus {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	-o-transition: var(--transition);
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+}
+
+button, button:hover, button:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	-o-transition: var(--transition);
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+}
+
+input,
+select,
+textarea {
+	-o-transition: var(--transition);
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	border-color: var(--primary-color) !important;
+}
+
+.transition-default {
+	-o-transition: var(--transition);
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+}
+
+.pseudo {
+	position: relative;
+	overflow: hidden;
+}
+
+.pseudo:before,
+.pseudo:after {
+	position: absolute;
+	content: "";
+	display: block;
+}
+
+.background-cover {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.object-fit-cover {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.object-fit-contain {
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.limit-lines {
+	--lines: 3;
+	display: inline-block;
+	display: -webkit-box;
+	width: 100%;
+	line-clamp: var(--lines);
+	-webkit-line-clamp: var(--lines);
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.z-index-0 {
+	z-index: 0;
+}
+
+.z-index-1 {
+	z-index: 1;
+}
+
+.z-index-2 {
+	z-index: 2;
+}
+
+.z-index-3 {
+	z-index: 3;
+}
+
+.z-index-4 {
+}
+
+.z-index-5 {
+	z-index: 5;
+}
+
+.z-index-10 {
+	z-index: 10;
+}
+
+.ratio > img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.ratio-2x1 {
+	--bs-aspect-ratio: 50%;
+}
+
+.ratio-3x2 {
+	--bs-aspect-ratio: calc(2 / 3 * 100%);
+}
+
+.ratio-3x4 {
+	--bs-aspect-ratio: calc(4 / 3 * 100%);
+}
