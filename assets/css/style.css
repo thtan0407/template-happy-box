@@ -305,73 +305,17 @@
 
 .section-thanks {
 	position: relative;
+	padding: 120px 0 150px;
 }
 
-.section-thanks:before {
-	width: 60%;
-	right: 0;
+.section-thanks svg {
+	position: absolute;
 	bottom: 0;
-	top: 0;
-	display: block;
-	position: absolute;
-	content: "";
-	background: rgba(var(--secondary-rgb), .5);
-	pointer-events: none;
-	z-index: -1;
-}
-
-.section-thanks:after {
-	right: calc(60% - (90px * 2.5));
-	bottom: 15px;
-	display: block;
-	position: absolute;
-	content: "";
-	background: url('../images/decor/thankyou-decor.webp') center center/cover no-repeat;
-	pointer-events: none;
-	z-index: -1;
-	width: 90px;
-	height: 100px;
-}
-
-.section-thanks .thanks-box {
-	padding: 15px;
+	left: 0;
+	right: 0;
 	width: 100%;
-	background: var(--bs-white);
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
-	position: relative;
-}
-
-.section-thanks .thanks-box:before {
-	position: absolute;
-	top: -60px;
-	left: -60px;
-	background: url('../images/decor/thank-you.png') center center/contain no-repeat;
-	width: 150px;
-	height: 150px;
-	display: block;
-	content: "";
-	z-index: 2;
-	pointer-events: none;
-	transform: rotate(-45deg);
-}
-
-.section-thanks .thanks-box .thanks-box_inner {
-	background: var(--bs-white);
-	border: 1px solid #efefef;
-	padding: 30px;
-	font-size: 1.15em;
-	color: var(--bs-gray-700);
-	line-height: 1.6;
-}
-
-.section-thanks .thanks-box .thanks-box_inner p {
-	margin-bottom: 12px;
-}
-
-.section-thanks .thanks-box .thanks-box_inner p:last-child {
-	margin-bottom: 0;
+	fill: rgba(var(--secondary-rgb), .5);
+	z-index: -1;
 }
 
 .footer {
