@@ -13,8 +13,8 @@
 		});
 	}
 
-	const handleSliderPartner = function () {
-		const slider = $('#slider-partner');
+	const handleSliderStories = function () {
+		const slider = $('#slider-stories');
 		if (slider.length > 0) {
 			const elmSwiper = '#' + slider.attr('id')
 			const objSwiper = {
@@ -26,8 +26,8 @@
 					delay: 6000,
 					disableOnInteraction: true,
 				},
-				slidesPerView: 6,
-				spaceBetween: 24,
+				slidesPerView: 3,
+				spaceBetween: 16,
 			}
 			handleSwiper(elmSwiper + ' .swiper', objSwiper);
 		}
@@ -35,6 +35,6 @@
 
 
 	$(document).ready(function () {
-		handleSliderPartner();
+		handleSliderStories();
 	});
 })(jQuery);

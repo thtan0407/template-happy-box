@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
 	--transition: all 0.3s ease-in-out;
 	--transition-default: all 0.3s ease-in-out;
@@ -8,7 +7,7 @@
 	--primary-rgb: 210, 42, 43;
 	--secondary-color: #FFF0F5;
 	--secondary-rgb: 255, 240, 245;
-	--font-hand: 'Philosopher', cursive;
+	--font-hand: 'Nunito', sans-serif;
 }
 
 body {
