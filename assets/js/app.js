@@ -28,6 +28,17 @@
 				},
 				slidesPerView: 3,
 				spaceBetween: 16,
+				breakpoints: {
+					320: {
+						slidesPerView: 1.25,
+					},
+					600: {
+						slidesPerView: 2.25,
+					},
+					1200: {
+						slidesPerView: 3,
+					}
+				}
 			}
 			handleSwiper(elmSwiper + ' .swiper', objSwiper);
 		}
