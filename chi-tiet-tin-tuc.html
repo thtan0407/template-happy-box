@@ -29,12 +29,21 @@
 
 <header id="header" class="header">
 	<div class="header-top py-3">
-		<div class="container">
-			<div class="d-flex justify-content-center">
+		<div class="container-lg">
+			<div class="header-inner d-flex flex-wrap justify-content-lg-center">
 				<div class="header-logo">
 					<a href="./index.html" class="d-inline-block align-middle">
 						<img src="./assets/images/logo.png" height="80px" width="250px" class="mw-100" alt="">
 					</a>
+				</div>
+				<div class="header-hamburger d-flex d-lg-none">
+					<button data-bs-toggle="collapse" data-bs-target="#header-navigation" type="button"
+							class="hamburger-button" id="hamburger-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 				<div class="header-title align-self-end ps-3">
 					Chào bạn!<br>Ở đây có hộp quà hạnh phúc dành cho bạn!
@@ -42,10 +51,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-bottom">
-		<div class="container">
+	<div class="header-bottom collapse" id="header-navigation">
+		<div class="container-lg">
 			<div class="header-navigation">
-				<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center">
+				<ul class="list-unstyled mb-0 d-flex flex-column flex-lg-row align-items-center justify-content-center">
 					<li>
 						<a href="./"><span>Trang chủ</span></a>
 					</li>

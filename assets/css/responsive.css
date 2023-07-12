@@ -256,6 +256,8 @@
 		margin-right: calc(var(--bs-gutter-x) * -0.5);
 		margin-left: calc(var(--bs-gutter-x) * -0.5);
 		width: calc(100% + var(--bs-gutter-x)) !important;
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
 		order: -1;
 		padding: 10px 0;
 		text-align: center;
@@ -265,6 +267,8 @@
 
 	.header .header-hamburger {
 		margin-left: auto;
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
 		align-self: center;
 	}
 
@@ -320,8 +324,56 @@
 		top: 22px;
 	}
 
+	.header .header-hamburger .hamburger-button[aria-expanded=true] > span:nth-child(2) {
+		-webkit-transform: rotate(45deg) scale(.9);
+		-ms-transform: rotate(45deg) scale(.9);
+		transform: rotate(45deg) scale(.9);
+	}
+
+	.header .header-hamburger .hamburger-button[aria-expanded=true] > span:nth-child(3) {
+		-webkit-transform: rotate(-45deg) scale(.9);
+		-ms-transform: rotate(-45deg) scale(.9);
+		transform: rotate(-45deg) scale(.9);
+	}
+
+	.header .header-hamburger .hamburger-button[aria-expanded=true] > span:nth-child(1), .header .header-hamburger .hamburger-button[aria-expanded=true] > span:nth-child(4) {
+		top: 17.5px;
+		width: 0;
+		left: 50%;
+		-webkit-transform: scale(.9);
+		-ms-transform: scale(.9);
+		transform: scale(.9);
+	}
+
+	.header .header-bottom .container-lg {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.header .header-navigation ul li {
+		width: 100%;
+	}
+
 	.header .header-navigation ul li a {
-		
+		width: 100%;
+		padding: 15px;
+		font-size: 1em;
+	}
+
+	.header .header-navigation ul li + li {
+		border-top: 1px solid var(--bs-gray-900);
+	}
+
+	.header .header-navigation ul li + li:before {
+		display: none;
+	}
+
+	.header .header-navigation ul li a > span:before {
+		display: none;
+	}
+
+	.header .header-navigation ul li.active a {
+		background: var(--bs-gray-900);
 	}
 
 	.hero-item .hero-item_image {
@@ -450,6 +502,7 @@
 
 	.detail-article .article-meta {
 		font-size: 0.925em;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -595,6 +648,8 @@
 		position: relative !important;
 		top: unset !important;
 		left: unset !important;
+		-webkit-transform: unset !important;
+		-ms-transform: unset !important;
 		transform: unset !important;
 	}
 
@@ -606,6 +661,7 @@
 @media screen and (max-width: 475px) {
 	.detail-article .article-meta .article-meta_list {
 		white-space: nowrap;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -621,6 +677,7 @@
 	}
 
 	.detail-story .story-meta .story-meta_list {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -632,6 +689,7 @@
 	}
 
 	.story-card .card-body .card-meta {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		gap: 8px;
 	}
